@@ -194,6 +194,7 @@ clientSecret = "" # Your client secret
     clientSecret = ""       # Your client secret
 
 [markup]
+  defaultMarkdownHandler = 'goldmark'
   [markup.tableOfContents]
     startLevel = 1
     endLevel = 6

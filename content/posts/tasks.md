@@ -83,7 +83,6 @@ I like this implementation:
 
 
 {{< code language="CSS" title="Really cool snippet" id="1" isCollapsed="false" >}}
-
 pre {
      background: #1a1a1d;
      padding: 20px;
@@ -101,19 +100,19 @@ pre {
          font-size: inherit;
     }
 }
-
 {{< /code >}}
 
 
 ### bash
 
-```bash
+```sh
 #!/bin/sh
-
-docker build --no-cache --force-rm -t site .
-
+docker build --no-cache --force-rm -t site
 docker run -p 8080:8080 site
+
+mv file1 file2
 ```
+
 
 ### HTML
 

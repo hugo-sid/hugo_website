@@ -90,29 +90,6 @@
       }
     }
 
-    code,
-    pre {
-      padding: 7px;
-      font-size: 13px;
-      font-family: Consolas, Monaco, Menlo, Consolas, monospace;
-      word-break: break-all;
-      word-wrap: break-word;
-    }
-
-    code:not([class]) {
-      padding: 5px 5px;
-      background: #fff;
-      border: 1px solid #ddd;
-      box-shadow: 1px 1px 0 #fff, 2px 2px 0 #ddd;
-      margin-left: 3px;
-      margin-right: 3px;
-
-      .dark-theme &:not([class]) {
-        background: transparent;
-        box-shadow: 1px 1px 0 $dark-font-secondary-color,
-          2px 2px 0 $dark-font-secondary-color;
-      }
-    }
 
     ul {
       padding-left: 2em;
@@ -487,7 +464,10 @@
 
 /***** 2. End collapsible ToC CSS *****/
 
-
+pre{
+  font-family: monospace;
+  background: #0f4059;
+}
 
 
 .collapsable-code {
@@ -533,6 +513,7 @@
 		cursor: pointer;
 	}
 	&__title {
+    font-size: 1rem;
 		color: $var2;
 		padding: 3px 10px;
 		text-overflow: ellipsis;
@@ -540,7 +521,6 @@
 		overflow: hidden;
 	}
 	&__language {
-		font-size: 15px;
 		background: $var3;
 		color: $var4;
 		border-radius: 7px;
@@ -558,8 +538,8 @@
 	pre {
 		margin-top: 0;
 		border-top: 3px solid $var6;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
+		border-top-left-radius: 0 !important;
+		border-top-right-radius: 0 !important;
 	}
 	code:first-line, pre:first-line {
 		line-height: 0;
